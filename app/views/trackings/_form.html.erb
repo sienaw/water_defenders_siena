@@ -1,0 +1,14 @@
+<%= simple_form_for(@tracking) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :time %>
+    <%= f.input :unit %>
+    <%= f.input :value %>
+    <%= f.association :user %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
